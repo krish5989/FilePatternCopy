@@ -21,7 +21,7 @@ def patternsrchcopy(srcdir, dstdir, pattern='*'):
     dest_dir=dstdir
     pattern=pattern
     listfiles=glob.iglob(src_dir+'/'+pattern)
-    #iterate the files in listfiles and commit to svn
+    #iterate the files in listfiles
     for f in listfiles:
         shutil.copy(f, dest_dir)
 
